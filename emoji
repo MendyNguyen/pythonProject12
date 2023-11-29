@@ -1,0 +1,18 @@
+# pythonProject12
+seq_one = ":-)"
+seq_two = ":-("
+total = 0
+
+message = input("please enter a message: ")
+
+def count_emoji(message):
+    if message.count (":-)")  > message.count(":-("):
+        print("happy")
+    elif message.count (":-)")  < message.count(":-("):
+        print("sad")
+    elif message.count (":-)")  == message.count(":-("):
+        print("unsure")
+    else:
+        print("none")
+
+count_emoji(message)
